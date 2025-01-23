@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Include="Library.fs"/>
+        <Content Include="wsconfig.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="WebSharper">
+            <Version>6.1.7.476</Version>
+        </PackageReference>
+        <PackageReference Include="WebSharper.FSharp">
+            <Version>6.1.7.476</Version>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
